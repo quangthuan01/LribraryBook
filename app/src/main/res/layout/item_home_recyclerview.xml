@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_home_recyclerview_container"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="95dp"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp">
+
+        <ImageView
+            android:id="@+id/item_home_image"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="12dp"
+        android:gravity="left"
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded,UselessLeaf">
+
+        <TextView
+            android:id="@+id/item_home_tvNameStory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/app_name"
+            android:textColor="@color/primary"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_home_tvAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/roboto_condensed"
+            android:text="@string/app_name"
+            android:textColor="@color/primary"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/item_home_tvGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/roboto_condensed"
+            android:text="@string/app_name"
+            android:textColor="@color/primary"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/item_home_tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/roboto_condensed"
+            android:text="@string/app_name"
+            android:textColor="@color/primary"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="10dp"
+        android:gravity="end"
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded,UselessLeaf">
+
+        <TextView
+            android:id="@+id/item_home_tvChapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/app_name"
+            android:textColor="@color/primary"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/item_home_tvViewer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/roboto_condensed"
+            android:text="@string/app_name"
+            android:textColor="@color/primary"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_home_tvStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_condensed"
+                android:text="@string/app_name"
+                android:textColor="@color/primary"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_star"
+                android:tint="@color/yellow"
+                tools:ignore="ContentDescription,RtlHardcoded,UseAppTint" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/item_home_btnRead"
+        android:layout_width="68dp"
+        android:layout_height="20dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_btn_read"
+        android:elevation="20dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/doc"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        tools:ignore="RtlHardcoded,TouchTargetSizeCheck" />
+
+
+</androidx.cardview.widget.CardView>

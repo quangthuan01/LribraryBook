@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ShoppingFragment"
+    android:background="@color/primary">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/tab_shopping_cart"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".01"
+            app:layout_constraintHorizontal_bias=".06"
+            app:layout_constraintWidth_percent=".92"
+            />
+
+    <ImageView
+        android:id="@+id/shopping_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@drawable/ic_seach"
+        android:tint="@color/white"
+        app:layout_constraintVertical_bias=".6"
+        app:layout_constraintHorizontal_bias=".8"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        tools:ignore="ContentDescription,RtlHardcoded,UseAppTint" />
+
+    <ImageView
+        android:id="@+id/shopping_shopping_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@drawable/ic_cart"
+        android:tint="@color/white"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintVertical_bias=".6"
+        app:layout_constraintBottom_toBottomOf="@+id/shopping_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/shopping_search"
+        app:layout_constraintTop_toTopOf="@+id/shopping_search"
+        tools:ignore="ContentDescription,RtlHardcoded,UseAppTint" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:elevation="20dp"
+        app:layout_constraintVertical_bias=".02"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintWidth_percent=".92"
+        app:tabGravity="fill"
+        app:tabInlineLabel="false"
+        app:tabMode="scrollable"
+        app:tabPaddingEnd="5dp"
+        app:tabSelectedTextColor="@color/primary"
+        app:tabTextColor="@color/white"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

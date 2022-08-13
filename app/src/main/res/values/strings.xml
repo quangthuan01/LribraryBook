@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LibraryBook</string>
+    <string name="tab_home">Trang Chủ</string>
+    <string name="tab_library">Thư Viện</string>
+    <string name="tab_shopping_cart">Mua Sách</string>
+    <string name="tab_profile">Tài Khoản</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="t_m_ki_m_nhanh">Tìm kiếm nhanh</string>
+    <string name="doc">Đọc</string>
+    <string name="c_ngay">Đọc Ngay</string>
+    <string name="th_vi_n_c_a_b_n">Thư viện của bạn</string>
+    <string name="u_la_i_l_c_ph_n_hai">Đấu La Đại Lục Phần Hai</string>
+    <string name="l_ch_s_g_n_nh_t">Lịch sử gần nhất</string>
+</resources>
